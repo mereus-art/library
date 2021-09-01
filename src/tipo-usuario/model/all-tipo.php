@@ -1,7 +1,8 @@
 <?php
+
     include('../../conexao/conn.php');
     $dados = array();
-    $sql = "SELECT * FROM CURSO ORDER BY NOME ASC";
+    $sql = "SELECT * FROM TIPO_USUARIO ORDER BY DESCRICAO ASC";
     $resultado = $pdo->query($sql);
     if($resultado){
         while($row = $resultado->fetch(PDO::FETCH_ASSOC)){
